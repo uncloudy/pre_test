@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>div, span, id and class</title>
+    <style>
+      .card {
+        border: 1px solid black;
+        background-color: azure;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      .enhance {
+        color: red;
+        background-color: burlywood;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main-header" class="card">
+      <h1>my website</h1>
+      <p>the site about me</p>
+    </div>
+    <ul id="main-nav">
+      <li><a href="#">home</a></li>
+      <li><a href="#">about</a></li>
+      <li><a href="#">contact</a></li>
+    </ul>
+    <div id="about" class="card">
+      <h3>about</h3>
+      <p>
+        Lorem ipsum <div class="enhance">dolor sit amet consectetur, adipisicing elit. Omnis fuga
+        repudiandae</div> fugit <span class="enhance">facilis vero vitae quos cum</span> adipisci velit earum.
+      </p>
+    </div>
+    <div id="contact" class="card">
+      <h3>contact</h3>
+      <ul>
+        <li>address :</li>
+        <li>phone :</li>
+        <li>email :</li>
+      </ul>
+    </div>
+    <div id="main-footer">
+      <p>copyright 2020</p>
+    </div>
+  </body>
+</html>
