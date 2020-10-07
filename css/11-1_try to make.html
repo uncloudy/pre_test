@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: darkorchid;
+      }
+      .container {
+        width: 300px;
+        margin: 10px auto;
+      }
+      .container .container__wrapped {
+        background: #f4f4f4;
+        border-radius: 10px;
+        padding: 20px 30px;
+        margin-bottom: 5px;
+      }
+      .container__wrapped h1 {
+        text-align: center;
+        padding: 10px 20px;
+      }
+      .container__wrapped p {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #333;
+      }
+      .form__wrapped {
+        margin-bottom: 15px;
+      }
+      .form__wrapped label {
+        display: block;
+        margin-bottom: 3px;
+      }
+      .form__wrapped input {
+        width: 100%;
+        border: 0.1px #333 dotted;
+        border-radius: 5px;
+        height: 20px;
+      }
+      .btn button {
+        border: none;
+        background: grey;
+        height: 20px;
+        color: #f4f4f4;
+        width: 100%;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .btn button:hover {
+        background: lightslategrey;
+      }
+      footer p {
+        color: #333;
+        font-size: 15px;
+      }
+      footer p a {
+        text-decoration: none;
+        color: maroon;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outer__container">
+      <div class="container">
+        <div class="container__wrapped">
+          <main class="container__wrapped__main">
+            <h1>Welcome</h1>
+            <p>Fill in the form to register</p>
+            <section class="main_section">
+              <form action="process.php">
+                <div class="form__wrapped">
+                  <label for="firstname">First name</label>
+                  <input type="text" name="firstname" id="firstname" />
+                </div>
+                <div class="form__wrapped">
+                  <label for="lastname">Last name</label>
+                  <input type="text" name="lastname" id="lasttname" />
+                </div>
+                <div class="form__wrapped">
+                  <label for="email">E-mail</label>
+                  <input type="email" name="email" id="email" />
+                </div>
+                <div class="btn form__wrapped">
+                  <button>Submit</button>
+                </div>
+              </form>
+            </section>
+          </main>
+        </div>
+        <div class="container__unwrapped">
+          <footer>
+            <p>
+              copyright&copy;2020&nbsp;privacy polocy :
+              <a href="#">click here</a>
+            </p>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
