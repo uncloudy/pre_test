@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>nth child</title>
+    <style>
+      li {
+        padding: 0.25rem;
+        margin: 0.25rem;
+        list-style: none;
+      }
+      /* first-child */
+      li:first-child {
+        background-color: red;
+      }
+      /* last-child */
+      li:last-child {
+        background: blue;
+      }
+      /* position 3 */
+      li:nth-child(3) {
+        background-color: purple;
+      }
+      /* every 3 */
+      li:nth-child(3n + 0) {
+        background-color: yellow;
+      }
+      /* every 3 after 7 */
+      li:nth-child(3n + 7) {
+        background-color: green;
+      }
+      /* every odd */
+      li:nth-child(odd) {
+        background-color: tomato;
+      }
+      li:nth-child(even) {
+        background-color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>item1</li>
+      <li>item2</li>
+      <li>item3</li>
+      <li>item4</li>
+      <li>item5</li>
+      <li>item6</li>
+      <li>item7</li>
+      <li>item8</li>
+      <li>item9</li>
+      <li>item10</li>
+      <li>item11</li>
+      <li>item12</li>
+      <li>item13</li>
+      <li>item14</li>
+      <li>item15</li>
+      <li>item16</li>
+      <li>item17</li>
+      <li>item18</li>
+      <li>item19</li>
+      <li>item20</li>
+    </ul>
+  </body>
+</html>
