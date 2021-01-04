@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 
+:root {
+  --page-1-color: steelblue;
+  --page-2-color: tan;
+  --page-3-color: teal;
+  --page-4-color: slateblue;
+  --animate-speed: 1s;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -8,17 +16,23 @@
 
 body {
   font-family: "Open Sans", sans-serif;
+  line-height: 1.4;
+  color: #fff;
+  overflow: hidden; /*this make scroll bar hedden*/
 }
 
-h1 {
+/* page color */
+#page-1 {
+  background: var(--page-1-color);
 }
-
-a {
-  text-decoration: none;
-  border: none;
-  background: #f4f4f4;
-  padding: 5px 10px;
-  border-radius: 5px;
+#page-2 {
+  background: var(--page-2-color);
+}
+#page-3 {
+  background: var(--page-3-color);
+}
+#page-4 {
+  background: var(--page-4-color);
 }
 
 .page {
@@ -28,4 +42,37 @@ a {
   align-items: center;
   text-align: center;
   height: 100vh;
+  padding: 0 4rem;
+}
+
+.page h1 {
+  font-size: 4rem;
+  line-height: 1.2;
+  margin: 1rem;
+}
+
+.page p {
+  font-size: 1.3rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: #f4f4f4;
+  color: #333;
+  text-decoration: none;
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover,
+.btn-dark {
+  background: #333;
+  color: #fff;
+}
+
+.btn-dark:hover {
+  background: #f4f4f4;
+  color: #333;
 }
